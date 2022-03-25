@@ -1,0 +1,131 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block title %}Home Page{% endblock title %}
+{% block root %}
+<form method="post" action="./" id="ctl01">
+  <div class="navbar navbar-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+          style="color: #ffffff;">
+          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+          </span>
+        </button>
+        <br>
+        <br>
+        <span style="padding-left: 50px; font-weight: bold; font-size: 20px;">Manuel S. Enverga University
+          Foundation</span>
+        <br>
+        <span style="padding-left: 50px; font-weight: bold; font-size: 15px;">Lucena City,
+          Philippines</span>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-nav-top navbar-right">
+          <li>
+            <a href="Default.html" id="A1">
+              <span class="glyphicon glyphicon-home"></span>
+              <br>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="Help.html" id="A2">
+              <span class="glyphicon glyphicon-question-sign"></span>
+              <br>
+              Help
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8" style="min-height: 350px;">
+        <div class="common-title">
+          <h1><span class="glyphicon glyphicon-th-large"></span> Welcome to myMSEUF Portal!</h1>
+        </div>
+        <div class="common-subtitle">
+          Please select User Type
+        </div>
+        <br>
+        <br>
+        <div class="col-md-12">
+          <ul class="nav nav-pills nav-stacked nav-pills-maroon">
+            <li><a href="admission.html" id="MainContent_A5"> <span class="glyphicon glyphicon-user"></span>
+                Admission</a></li>
+            <li><a href="payments.html" id="MainContent_A6"> <span class="glyphicon glyphicon-user"></span> Online
+                Payment (Exclusive for payments
+                thru Dragonpay)</a></li>
+            <li><a href="BasicEd.html" id="MainContent_A4"> <span class="glyphicon glyphicon-user"></span> Basic
+                Education (K to 10)</a></li>
+            <li><a href="SeniorHigh.html" id="MainContent_A1"> <span class="glyphicon glyphicon-user"></span> Senior
+                High</a></li>
+            <li><a href="Student.html" id="MainContent_A2"> <span class="glyphicon glyphicon-user"></span>
+                College/Graduate School/ETEEAP/Law</a>
+            </li>
+            <li><a href="Employee.html" id="MainContent_A3"> <span class="glyphicon glyphicon-user"></span>
+                Faculty/Employee</a></li>
+            <li><a href="eusis-candelaria.html" id="MainContent_A7"> <span class="glyphicon glyphicon-user"></span>
+                Candelaria - Student Information
+                System</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="common-small-title">
+          <span class="glyphicon glyphicon-bullhorn"></span> Book your appointment
+        </div>
+
+        <div
+          style="font-size: 14px; margin-top: 10px; margin-bottom: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; border-radius: 10px; background: #f9faeb;">
+          <strong><span class="glyphicon glyphicon-info-sign"></span> The university encourages you to do
+            all transactions online. However, if you need to visit the campus, please set your
+            appointment at <a id="HyperLink2"
+              href="http://bookmseuf.setmore.com">http://bookmseuf.setmore.com</a>.</strong>
+        </div>
+
+        <div class="common-small-title">
+          Enrollment Schedule
+        </div>
+
+
+        <table style="margin-bottom: 15px;">
+          <tr>
+            <td style="border-bottom: 1px solid #eeeeee; padding-bottom: 15px; width: 100px; text-align: center;"
+              colspan="3">
+              <i>{{ ann_date }}</i>
+            </td>
+            <td style="border-bottom: 1px solid #eeeeee; padding-bottom: 15px;">
+              <div class="common-calendar-sched-content">
+                <strong>{{ ann_title }}</strong>
+                <br>
+                {{ ann_info }}
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-new">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>
+            <br>
+            System Development Team. Information and Communications Technology Department
+            <br>
+            Manuel S. Enverga University Foundation
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+{% endblock root %}

@@ -1,0 +1,230 @@
+﻿.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-top {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    background-color: #680000;
+    background: url('../images/Images-headerbg.png') #680000 no-repeat;
+    border-bottom: 15px solid #f65503;
+    line-height: 15px;
+}
+
+.navbar-nav-top li a {
+    color: #ffffff !important;
+    background-color: #680000;
+    text-align: center;
+}
+
+.navbar-nav-top li a span {
+    font-size: 30px;
+    text-align: center;
+}
+
+.navbar-nav-top li a:hover {
+    color: #fc5252 !important;
+    background-color: #680000;
+}
+
+.navbar-nav-top li a:focus {
+    color: #fc5252 !important;
+    background-color: #680000;
+}
+
+.navbar-nav-top li a:active {
+    color: #fc5252 !important;
+    background-color: #680000;
+}
+
+.navbar-header {
+    color: #ffffff;
+}
+
+.navbar .nav > li.dropdown.open.active > a:hover, .navbar .nav > li.dropdown.open > a {
+    color: #fff;
+    background-color: #680000;
+    border-color: #fff;
+}
+
+.navbar-nav-menu li a span {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.navbar-nav-menu li a {
+    color: #cecece;
+    text-align: center;
+}
+
+.navbar-nav-menu li a:hover {
+    background: #9a0101;
+}
+
+.navbar-text {
+    color: #ffffff;
+}
+
+.navbar-module-menu {
+    color: #3a0000;
+}
+
+.footer-new {
+    background-color: #680000;
+    background-repeat: no-repeat;
+    text-align: right;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.modulepanel {
+    border-left: 5px solid #5f0000;
+    border-right: 5px solid #5f0000;
+    border-bottom: 5px solid #5f0000;
+    padding: 15px 15px 10px 15px;
+    margin-bottom: 15px;
+}
+
+.icon-bar {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+
+.top-menu-dropdown {
+    background-color: #eeeeee;
+}
+
+.top-menu-dropdown li a {
+    background-color: #eeeeee;
+}
+
+.top-menu-dropdown li a:hover {
+    background-color: #eeeeee;
+}
+
+.navbar-main-menu {
+    background-color: #3a0000;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+a {
+    color: #89220f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #b42e16;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+.modal-content {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+
+.modal-header, .modal-footer {
+    background: #680000;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+}
+
+.nav-pills-gray > .active > a, .nav-pills-gray > .active > a:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.nav-pills-gray {
+    border: 1px solid #222222;
+}
+
+.nav-pills-gray > li.active > a, .nav-pills-gray > li.active > a:hover, .nav-pills-gray > li.active > a:focus {
+    background-color: #222222;
+    color: #ffffff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.radio label {
+    color: #680000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px 5px 0px 25px;
+}
+
+/*
+---------------------------------------------------------------------------
+    MODAL 
+---------------------------------------------------------------------------
+*/
+
+.modal-content {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+
+.modal-header, .modal-footer {
+    background: none;
+    color: #333333;
+    /*border-bottom: 2px solid #680000;*/
+}
+
+.modal-footer {
+}
+
+
+/* NAV PILLS ACTIVE BACKGROUND*/
+
+
+.nav-pills-maroon li span {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.nav-pills-maroon li a {
+    vertical-align: middle;
+    padding: 20px 20px 20px 20px;
+    background-color: #680000;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.nav-pills-maroon li span:hover, .nav-pills-maroon li span:focus {
+    background-color: red;
+    color: #ffffff;
+}
+
+.nav-pills-maroon li a:hover, .nav-pills-maroon li a:focus {
+    background-color: red;
+    color: #ffffff;
+}
+
+/* button */
+
+.btn-info {
+    background-color: #f65503;
+}
+
+.btn-info:hover, .btn-info:active, .btn-info:after{
+    background-color: #680000;
+}
+
+/* buttons */

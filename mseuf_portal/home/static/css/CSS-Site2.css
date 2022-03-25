@@ -1,0 +1,366 @@
+﻿body {
+    line-height: 1.5em;
+    color: #333333;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+.displabel {
+    background: #efefef;
+}
+
+.footer-new {
+    background-color: #680000;
+    background-repeat: no-repeat;
+    text-align: right;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    display: block;
+    opacity: 0.7;
+    background-color: #ffffff;
+    z-index: 99;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.common-medium-title {
+    margin: 5px 5px 20px 10px;
+    padding: 5px 5px 5px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #333333;
+}
+
+.common-title {
+    padding: 20px 20px 0px 5px;
+    border-bottom: 2px solid #680000;
+}
+
+.common-title h1 {
+    font-size: 35px;
+    color: #680000;
+    font-weight: bolder;
+    padding: 0px;
+    margin: 5px;
+}
+
+.common-subtitle {
+    color: #680000;
+    font-size: 20px;
+    padding: 0px 0px 0px 5px;
+}
+
+.common-small-title {
+    padding: 20px 20px 0px 5px;
+    border-bottom: 2px solid #3e3e3e;
+    font-size: 18px;
+    color: #333333;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.common-content-gray {
+    font-size: 15px;
+    color: #333333;
+    padding: 0px 20px 20px 5px;
+}
+
+.common-calendar-sched {
+    border: none;
+    margin: 5px;
+}
+
+.common-calendar-sched-month-separator {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+}
+
+.common-calendar-sched-month {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    width: 50px;
+    padding-bottom: 2px;
+    margin-top: 0px;
+    padding-top: 2px;
+    background: #35c772;
+    color: #ffffff;
+}
+
+.common-calendar-sched-day-of-month {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #333333;
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.common-calendar-sched-content {
+    font-size: 14px;
+    color: #333333;
+    text-align: left;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.border-right-dashed {
+    border-right: 2px dotted #333333;
+}
+
+.border-left-dashed {
+    border-left: 2px dotted #333333;
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: 4px 4px 4px 5px;
+    /*background: #f1f0f0;*/
+    border: 1px solid #696969;
+}
+
+select {
+    width: 100%;
+    border: none;
+    padding: 4px 4px 4px 5px;
+    /*background: #f1f0f0;*/
+    border: 1px solid #696969;
+}
+
+/* stepper */
+
+.stepper-num {
+    background: url('../images/Images-stepper.png') no-repeat transparent;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 44px;
+    display: block;
+    padding-left: 18px;
+    padding-top: 10px;
+}
+
+.stepper-num-current {
+    background: url('../images/Images-steppercurrent.png') no-repeat transparent;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 44px;
+    display: block;
+    padding-left: 15px;
+    padding-top: 12px;
+}
+
+.stepper-label {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 30px;
+    color: #333333;
+
+}
+
+.stepper-description 
+{
+    font-size: 18px;
+    font-weight: normal;
+    color: #333333;
+    padding-left: 30px;
+}
+
+.stepper-divider {
+    margin-left: 23px;
+    border-left: 2px dashed #333333;
+    height: 30px;
+}
+
+.errormessage {
+    color: red;
+    font-weight: bold;
+    margin: 0px;
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+/* ---------------------CHECK BOX ----------------------------------*/
+/* The container */
+.chkcontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.chkcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.chkcontainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.chkcontainer input:checked ~ .checkmark {
+    background-color: #f65503;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.chkcontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.chkcontainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ----------------END OF CHECK BOX ------------------------------*/
+
+/* ---------------------CHECK BOX SMALL ----------------------------------*/
+/* The container */
+.chkcontainer-small {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    /* Hide the browser's default checkbox */
+.chkcontainer-small input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+}
+
+
+/* On mouse-over, add a grey background color */
+.chkcontainer-small:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.chkcontainer-small input:checked ~ .checkmark {
+    background-color: #f65503;
+}
+
+
+/* Show the checkmark when checked */
+.chkcontainer-small input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.chkcontainer-small .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ----------------END OF CHECK BOX ------------------------------*/
+
+/* buttons */
+
+
+.btn-big {
+    padding: 15px 30px 15px 30px;
+    color: #700808;
+    font-weight: bold;
+}
+
+.btn-color {
+    color: #700808;
+}
+
+/* links */
+
+div.menu-link-common a {
+    color: #ffffff !important;
+    font-size: 20px;
+    text-align: center;
+}
+
+div.menu-link-common a span {
+    font-size: 60px;
+    text-align: center;
+}
+
+div.menu-link-common a:hover {
+    color: #ffffff !important;
+    text-align: center;
+}
+
+div.menu-link-common a:focus {
+    color: #ffffff !important;
+    text-align: center;
+}
+
+div.menu-link-common a:active {
+    color: #ffffff !important;
+    text-align: center;
+}
